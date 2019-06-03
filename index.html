@@ -7,10 +7,24 @@
   <title>Hangman Game</title>
   <link href="css/style.css" rel='stylesheet'>
 </head>
-<body>
-  <header>Hang'em Hi</header>
-  <main class ></main>
-  <footer></footer>
+<body onload='initGame'>
+  <header>
+    <div id='start'>
+      <h1>Hang Man</h1>
+      <div id='btnLetter' class='button' onclick='start'></div>
+      <h4>Use the letters below to guess the word.</h4>
+    </div>
+  </header>
+  <main>
+    <div id='gameContent'>
+      <div id='used' class='panel'></div>
+      <div id="tile" class='panel'></div>
+      <div id='avaliable' class='panel'></div>
+    </div>
+  </main>
+  <footer>
+      <button type="submit" onclick="initGame()">Refresh</button>
+  </footer>
   <script src='js/script.js'></script>
 </body>
 </html>
